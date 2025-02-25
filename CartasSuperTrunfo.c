@@ -16,10 +16,10 @@
         scanf(" %c", &estado); 
 
         printf("Código da carta: "); 
-        scanf(" %s", &codigo); 
+        scanf("%s", codigo); 
 
         printf("Nome da cidade: "); 
-        scanf(" %s", &cidade); 
+        scanf("%s", cidade); 
 
         printf("População: "); 
         scanf(" %d", &populacao); 
@@ -40,10 +40,10 @@
         scanf(" %c", &estado2); 
 
         printf("Código da carta: "); 
-        scanf(" %s", &codigo2); 
+        scanf("%s", codigo2); 
 
         printf("Nome da cidade: "); 
-        scanf(" %s", &cidade2); 
+        scanf("%s", cidade2); 
 
         printf("População: "); 
         scanf(" %d", &populacao2); 
@@ -59,10 +59,10 @@
 
         //imprimindo carta 1 e carta 2
         
-        printf("Carta 1: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %f\n PIB: %f\n Número de pontos turisticos: %d\n", 
+        printf("Carta 1: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %f km²\n PIB: R$%.2f\n Número de pontos turisticos: %d\n", 
             estado, codigo, cidade, populacao, areakm, pib, pontosturisticos); 
 
-        printf("Carta 2: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %f\n PIB: %f\n Número de pontos turisticos: %d\n", 
+        printf("Carta 2: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %f km²\n PIB: R$%.2f\n Número de pontos turisticos: %d\n", 
             estado2, codigo2, cidade2, populacao2, areakm2, pib2, pontosturisticos2); 
 
         
