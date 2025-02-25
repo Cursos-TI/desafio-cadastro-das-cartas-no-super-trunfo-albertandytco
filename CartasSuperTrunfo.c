@@ -2,14 +2,16 @@
 
     int main (){
 
-        // inserindo as variáveis utilizadas nas cartas 
-        char estado;
-        char codigo[3];
-        char cidade[20]; 
-        int populacao, pontosturisticos; 
-        float areakm, pib; 
+        // inserindo as variáveis utilizadas nas cartas 1 e 2
+
+        char estado, estado2;
+        char codigo[3], codigo2[3];
+        char cidade[50], cidade2[50]; 
+        int populacao, pontosturisticos, populacao2, pontosturisticos2; 
+        float areakm, pib, areakm2, pib2; 
 
         //solicitando informacoes ao usuario da carta 1
+
         printf("Insira as informações da carta 1: \nEstado: "); 
         scanf(" %c", &estado); 
 
@@ -33,11 +35,6 @@
 
         
         //solicitando informaçoes ao usuario da carta 2
-        char estado2;
-        char codigo2[3];
-        char cidade2[20]; 
-        int populacao2, pontosturisticos2; 
-        float areakm2, pib2; 
 
         printf("Insira as informações da carta 2: \nEstado: "); 
         scanf(" %c", &estado2); 
@@ -61,6 +58,7 @@
         scanf(" %d", &pontosturisticos2); 
 
         //imprimindo carta 1 e carta 2
+        
         printf("Carta 1: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %f\n PIB: %f\n Número de pontos turisticos: %d\n", 
             estado, codigo, cidade, populacao, areakm, pib, pontosturisticos); 
 
