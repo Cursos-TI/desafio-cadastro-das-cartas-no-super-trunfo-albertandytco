@@ -3,15 +3,18 @@
     int main (){
 
         // inserindo as variáveis utilizadas nas cartas 1 e 2
-
         char estado, estado2;
         char codigo[3], codigo2[3];
         char cidade[50], cidade2[50]; 
         int populacao, pontosturisticos, populacao2, pontosturisticos2; 
         float areakm, pib, areakm2, pib2; 
-
+        float densidade1 = populacao / areakm;
+        float densidade2 = populacao2 / areakm2;
+        float pibpercapta1 = pib / populacao; 
+        float pibpercapta2 = pib2 / populacao2;
+        
+        
         //solicitando informacoes ao usuario da carta 1
-
         printf("Insira as informações da carta 1: \nEstado: "); 
         scanf(" %c", &estado); 
 
@@ -35,7 +38,6 @@
 
         
         //solicitando informaçoes ao usuario da carta 2
-
         printf("Insira as informações da carta 2: \nEstado: "); 
         scanf(" %c", &estado2); 
 
@@ -57,13 +59,11 @@
         printf("Número de pontos turisticos: ");
         scanf(" %d", &pontosturisticos2); 
 
-        //imprimindo carta 1 e carta 2
-        
-        printf("Carta 1: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %f km²\n PIB: R$%.2f\n Número de pontos turisticos: %d\n", 
-            estado, codigo, cidade, populacao, areakm, pib, pontosturisticos); 
-
-        printf("Carta 2: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %f km²\n PIB: R$%.2f\n Número de pontos turisticos: %d\n", 
-            estado2, codigo2, cidade2, populacao2, areakm2, pib2, pontosturisticos2); 
+        //imprimindo carta 1 e carta 2   
+        printf("Carta 1: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %.2f km²\n PIB: R$%.2f\n Número de pontos turisticos: %d\n Densidade Populacional: %.2f hab/km²\n PIB per Capta: R$ %.2f\n ", 
+            estado, codigo, cidade, populacao, areakm, pib, pontosturisticos, densidade1, pibpercapta1); 
+        printf("Carta 2: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n Área em Km²: %.2f km²\n PIB: R$%.2f\n Número de pontos turisticos: %d\n Densidade Populacional: %.2f hab/km²\n PIB per Capta: R$ %.2f\n", 
+            estado2, codigo2, cidade2, populacao2, areakm2, pib2, pontosturisticos2, densidade2, pibpercapta2); 
 
         
 
