@@ -74,8 +74,7 @@ int main (){
             estado, codigo, cidade, populacao, areakm, pib, pontosturisticos, densidade1, pibpercapta1, superpoderc1); 
     printf("Carta 2: \n Estado: %c\n Codigo da carta: %s\n Nome da cidade: %s\n População: %lu\n Área em Km²: %.2f km²\n PIB: %.2f Bilhoes de reais\n Número de pontos turisticos: %d\n Densidade Populacional: %.2f hab/km²\n PIB per Capta: R$ %.2f\n Superpoder: %.2f\n", 
             estado2, codigo2, cidade2, populacao2, areakm2, pib2, pontosturisticos2, densidade2, pibpercapta2, superpoderc2); 
-
-         
+  
     // Comparação das cartas
     printf("Comparação das cartas: \n");
     printf("Vencedor em populacao: Carta %d\n", (populacao > populacao2) * 1 + (populacao <= populacao2) * 2);
@@ -86,6 +85,5 @@ int main (){
     printf("Vencedor em PIB per capta: Carta %d\n", (pibpercapta1 > pibpercapta2) * 1 + (pibpercapta1 <= pibpercapta2) * 2);
     printf("Vencedor em Super Poder: Carta %d\n", (superpoderc1 > superpoderc2) * 1 + (superpoderc1 <= superpoderc2) * 2);
     
-
     return 0; 
 }
